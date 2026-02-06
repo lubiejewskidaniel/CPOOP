@@ -42,7 +42,7 @@ This project uses Firebase client config via `.env.local`:
 - `NEXT_PUBLIC_FIREBASE_APP_ID`
 - `NEXT_PUBLIC_FIREBASE_MEASUREMENT_ID`
 
-(An example `.env.local` is included in this submission.)
+(An example `.env.local` is included in this submission nut not in GitHub Repo.)
 
 ### Run
 
