@@ -1,0 +1,204 @@
+.wrapper {
+	min-height: calc(100vh - 120px);
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+	padding-top: 2rem;
+	background: #f4f6f8;
+}
+
+.container {
+	position: relative;
+	width: 800px;
+	height: 420px;
+	background: #fff;
+	border-radius: 12px;
+	overflow: hidden;
+	box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.forms {
+	display: flex;
+	width: 100%;
+	height: 100%;
+}
+
+.loginForm,
+.registerForm {
+	width: 50%;
+	padding: 2rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.overlay {
+	position: absolute;
+	top: 0;
+	width: 50%;
+	height: 100%;
+	background: #6aa5ff;
+	color: #fff;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	padding: 2rem;
+	transition: transform 0.6s ease;
+	border-radius: 6px;
+}
+
+.overlayLeft {
+	transform: translateX(0%);
+}
+
+.overlayRight {
+	transform: translateX(100%);
+}
+
+.switchButton {
+	margin-top: 1rem;
+	padding: 0.6rem 1.5rem;
+	border: none;
+	border-radius: 20px;
+	background: #fff;
+	color: #333;
+	cursor: pointer;
+	font-weight: 500;
+	transition: background-color 0.2s ease, color 0.2s ease, transform 0.15s ease,
+		box-shadow 0.15s ease;
+}
+
+.switchButton:hover {
+	background: #f0f0f0;
+	color: #000;
+	transform: translateY(-1px);
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.switchButton:active {
+	transform: translateY(0);
+	box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.form {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+	text-align: center;
+}
+
+.input {
+	padding: 0.6rem;
+	border: 1px solid #ccc;
+	border-radius: 6px;
+}
+
+.button {
+	padding: 0.6rem;
+	background: #333;
+	color: #fff;
+	border: none;
+	border-radius: 6px;
+	cursor: pointer;
+	transition: background-color 0.2s ease, transform 0.15s ease,
+		box-shadow 0.15s ease;
+}
+
+.button:hover {
+	background: #555;
+	transform: translateY(-2px);
+	box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.button:active {
+	transform: translateY(0);
+	box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+}
+
+.businessInfo {
+	margin-top: 0.75rem;
+	font-size: 0.75rem;
+	color: #666;
+	text-align: center;
+	line-height: 1.4;
+}
+
+.businessInfo a {
+	color: #2563eb;
+	text-decoration: none;
+}
+
+.businessInfo a:hover {
+	text-decoration: underline;
+}
+
+.helpInfo {
+	margin-top: 0.45rem;
+	font-size: 0.75rem;
+	color: #666;
+	text-align: center;
+	line-height: 1.4;
+}
+
+.helpInfo a {
+	color: #2563eb;
+	text-decoration: none;
+}
+
+.helpInfo a:hover {
+	text-decoration: underline;
+}
+
+@media (max-width: 900px) {
+	.container {
+		width: 80%;
+		height: 670px;
+		display: flex;
+		flex-direction: column;
+	}
+	.overlay {
+		position: relative - 10;
+		width: 100%;
+		height: 335px;
+		border-radius: 12px;
+		transition: transform 0.5s ease;
+	}
+	.overlayLeft {
+		transform: translateY(0%);
+	}
+	.overlayRight {
+		transform: translateY(100%);
+	}
+	.overlay {
+		order: 1;
+	}
+	.forms {
+		order: 2;
+		flex-direction: column;
+	}
+	.loginForm,
+	.registerForm {
+		width: 100%;
+		padding: 1.5rem;
+	}
+}
+
+@media (max-width: 480px) {
+	.overlay {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 265px;
+		height: auto;
+		border-radius: 12px;
+		transition: transform 0.5s ease;
+		border-radius: 6px;
+	}
+	.form {
+		max-width: 100%;
+	}
+}

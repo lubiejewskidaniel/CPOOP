@@ -1,0 +1,21 @@
+.page {
+	max-width: 900px;
+	margin: 0 auto;
+	padding: 2rem;
+}
+
+.header {
+	text-align: center;
+}
+
+.actions {
+	display: flex;
+	justify-content: center;
+	margin-top: 0.75rem;
+	padding-bottom: 0.75rem;
+}
+
+.listWrapper {
+	display: flex;
+	justify-content: center;
+}

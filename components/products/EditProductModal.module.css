@@ -1,0 +1,39 @@
+.overlay {
+	position: fixed;
+	inset: 0;
+	background: rgba(0, 0, 0, 0.4);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	z-index: 1000;
+}
+
+.modal {
+	background: var(--color-surface);
+	padding: 1.5rem;
+	border-radius: var(--radius-md);
+	width: 400px;
+	max-width: calc(100vw - 2rem);
+}
+
+.form {
+	margin-top: 1rem;
+	display: grid;
+	gap: 0.75rem;
+}
+
+.field {
+	display: grid;
+	gap: 0.35rem;
+}
+
+.label {
+	font-size: 0.9rem;
+	color: var(--color-muted);
+}
+
+.actions {
+	margin-top: 0.5rem;
+	display: flex;
+	gap: 0.5rem;
+}

@@ -1,0 +1,19 @@
+.popup {
+	min-width: 250px;
+	max-height: 450px;
+	overflow-y: auto;
+	font-size: 0.85rem;
+}
+
+.productRow {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 0.5rem;
+	gap: 0.5rem;
+}
+
+.actions {
+	display: flex;
+	flex-direction: column;
+	gap: 0.25rem;
+}

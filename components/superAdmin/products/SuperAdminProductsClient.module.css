@@ -1,0 +1,56 @@
+.page {
+	max-width: 1000px;
+	margin: 0 auto;
+	padding: 1.5rem;
+}
+
+.title {
+	text-align: center;
+	margin-bottom: 1rem;
+}
+
+.tableWrap {
+	overflow-x: auto; /* makes it responsive on small screens */
+}
+
+.table {
+	width: 100%;
+	border-collapse: collapse;
+	background: #fff;
+	border: 1px solid #e5e7eb;
+	border-radius: 8px;
+	overflow: hidden;
+}
+
+.table th,
+.table td {
+	padding: 0.75rem 1rem;
+	border-bottom: 1px solid #e5e7eb;
+	text-align: left;
+	white-space: nowrap;
+}
+
+.table th {
+	background: #f7f8fa;
+	font-weight: 600;
+}
+
+.table tr:last-child td {
+	border-bottom: none;
+}
+
+.error {
+	color: #b91c1c;
+}
+
+/* 0 stock = red-ish */
+.stockZero td {
+	color: #b91c1c;
+	font-weight: 600;
+}
+
+/* < 20 stock = orange-ish */
+.stockLow td {
+	color: #b45309;
+	font-weight: 600;
+}

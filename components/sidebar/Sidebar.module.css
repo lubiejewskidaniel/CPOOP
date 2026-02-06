@@ -1,0 +1,137 @@
+.sidebar {
+	width: 220px;
+	min-height: calc(100vh - 120px);
+	background-color: #f7f7f7;
+	border-right: 1px solid #ddd;
+	padding: 1rem;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+}
+
+.sidebarHeader {
+	display: flex;
+	flex-direction: column;
+	gap: 0.25rem;
+	margin-bottom: 1.5rem;
+}
+
+.welcomeText {
+	font-size: 1rem;
+	font-weight: 600;
+	color: #333;
+}
+
+.userName {
+	font-size: 0.9rem;
+	font-weight: 500;
+	color: #333;
+	max-width: 100%;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.userRole {
+	font-size: 0.75rem;
+	color: #666;
+}
+
+.menu {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.menu li {
+	margin-bottom: 0.75rem;
+	font-size: 0.95rem;
+}
+
+.menu li a {
+	text-decoration: none;
+	color: #333;
+}
+
+.menu li a:hover {
+	text-decoration: underline;
+}
+
+.logoutButton {
+	margin-top: 1rem;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	padding: 0.55rem 0.75rem;
+	background-color: #ffffff;
+	border: 1px solid #d1d5db;
+	border-radius: 6px;
+	color: #c00;
+	font-size: 0.85rem;
+	font-weight: 500;
+	cursor: pointer;
+	transition: all 0.2s ease;
+}
+
+.logoutButton:hover {
+	background-color: #fee2e2;
+	border-color: #fca5a5;
+	color: #991b1b;
+}
+
+.logoutButton:active {
+	transform: translateY(1px);
+}
+
+.logoutButton:focus {
+	outline: none;
+	box-shadow: 0 0 0 2px rgba(220, 38, 38, 0.3);
+}
+
+@media (max-width: 1024px) {
+	.sidebar {
+		width: 200px;
+	}
+
+	.welcomeText {
+		font-size: 0.9rem;
+	}
+
+	.userName {
+		font-size: 0.85rem;
+	}
+
+	.userRole {
+		font-size: 0.7rem;
+	}
+
+	.menu li {
+		font-size: 0.85rem;
+	}
+}
+
+@media (max-width: 768px) {
+	.sidebar {
+		width: 100%;
+		min-height: auto;
+		border-right: none;
+		border-bottom: 1px solid #ddd;
+	}
+
+	.welcomeText {
+		font-size: 0.85rem;
+	}
+
+	.userName {
+		font-size: 0.8rem;
+	}
+
+	.userRole {
+		font-size: 0.65rem;
+	}
+
+	.menu li {
+		font-size: 0.8rem;
+	}
+}

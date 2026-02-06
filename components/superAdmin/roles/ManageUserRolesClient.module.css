@@ -1,0 +1,38 @@
+.page {
+	max-width: 900px;
+	margin: 0 auto;
+	padding: 1.5rem;
+}
+
+.title {
+	text-align: center;
+	margin-bottom: 1rem;
+}
+
+.tableWrap {
+	overflow-x: auto;
+}
+
+.table {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+.table th,
+.table td {
+	padding: 0.75rem;
+	border-bottom: 1px solid #e5e7eb;
+	text-align: left;
+	vertical-align: middle;
+}
+
+.denied {
+	text-align: center;
+	margin-top: 2rem;
+}
+
+.error {
+	color: #b91c1c;
+	text-align: center;
+	margin-top: 1rem;
+}

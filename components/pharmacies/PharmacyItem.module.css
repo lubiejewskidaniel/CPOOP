@@ -1,0 +1,36 @@
+.card {
+	border: 1px solid var(--color-border);
+	background: var(--color-surface);
+	padding: 0.75rem;
+	margin-bottom: 0.75rem;
+	border-radius: var(--radius-sm);
+}
+
+.title {
+	display: block;
+	margin-bottom: 0.35rem;
+}
+
+.meta {
+	color: var(--color-muted);
+	font-size: 0.95rem;
+}
+
+.actions {
+	margin-top: 0.6rem;
+	display: flex;
+	gap: 0.5rem;
+	align-items: center;
+}
+
+.deleteBtn {
+	background: #dc2626;
+}
+
+.deleteBtn:hover {
+	background: #b91c1c;
+}
+
+.editBtn {
+	background: var(--color-primary);
+}

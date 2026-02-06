@@ -1,0 +1,44 @@
+.item {
+	padding: 1rem;
+	border: 1px solid var(--color-border);
+	border-radius: var(--radius-md);
+	background: var(--color-surface);
+}
+
+.title {
+	display: block;
+	margin-bottom: 0.5rem;
+}
+
+.meta {
+	font-size: 0.95rem;
+	color: var(--color-muted);
+}
+
+.actions {
+	margin-top: 0.75rem;
+	display: flex;
+	gap: 0.5rem;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.qtyBtn {
+	width: 40px;
+	height: 40px;
+	padding: 0;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.removeBtn {
+	height: 40px;
+	padding: 0 0.9rem;
+}
+
+.feedback {
+	margin-top: 0.5rem;
+	font-size: 0.8rem;
+	color: #2e7d32;
+}

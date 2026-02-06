@@ -1,0 +1,56 @@
+.row td {
+	background: var(--color-surface);
+}
+
+.cell {
+	padding: 10px 12px;
+	vertical-align: middle;
+}
+
+.actionsCell {
+	text-align: center;
+	width: 140px;
+}
+
+.actions {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	gap: 10px;
+	flex-wrap: wrap;
+}
+
+.iconBtn {
+	width: 40px;
+	height: 40px;
+	padding: 0;
+
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+
+	border-radius: 8px;
+	border: 1px solid var(--color-border);
+
+	background: #f3f4f6;
+	color: #111827;
+}
+
+.iconBtn:hover {
+	background: #e5e7eb;
+}
+
+.dangerBtn {
+	background: #fee2e2;
+	color: #991b1b;
+	border-color: #fecaca;
+}
+
+.dangerBtn:hover {
+	background: #fecaca;
+}
+
+.iconBtn:disabled {
+	opacity: 0.6;
+	cursor: not-allowed;
+}

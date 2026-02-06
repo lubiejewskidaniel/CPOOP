@@ -1,0 +1,12 @@
+/* Styles for the main app shell layout.
+   Controls the flex layout Sidebar + content and spacing of the main page area.
+ */
+.shell {
+	display: flex;
+	min-height: calc(100vh - 64px);
+}
+
+.main {
+	flex: 1;
+	padding: 2rem;
+}

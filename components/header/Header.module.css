@@ -1,0 +1,77 @@
+.header {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0.75rem 2rem;
+	border-bottom: 1px solid #ddd;
+	background-color: #fff;
+}
+
+.logo {
+	display: flex;
+	align-items: center;
+}
+
+.nav {
+	display: flex;
+	gap: 2rem;
+}
+
+.iconLink {
+	text-decoration: none;
+	color: #333;
+}
+
+.iconWrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	position: relative;
+	cursor: pointer;
+}
+
+.label {
+	font-size: 0.75rem;
+	margin-top: 0.25rem;
+}
+
+.tooltip {
+	position: absolute;
+	top: -2.2rem;
+	background-color: #333;
+	color: #fff;
+	padding: 0.25rem 0.5rem;
+	font-size: 0.7rem;
+	border-radius: 4px;
+	white-space: nowrap;
+	opacity: 0;
+	pointer-events: none;
+	transition: opacity 0.2s;
+}
+
+.iconWrapper:hover .tooltip {
+	opacity: 1;
+}
+
+.iconImage {
+	transition: transform 0.2s ease;
+}
+
+.iconWrapper:hover .iconImage {
+	transform: scale(1.2);
+}
+
+.iconDisabled {
+	opacity: 0.5;
+	cursor: default;
+}
+
+.iconDisabled .iconImage {
+	filter: grayscale(100%);
+	transform: none;
+}
+
+.iconDisabled:hover {
+	transform: none;
+}

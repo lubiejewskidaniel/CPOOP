@@ -1,0 +1,17 @@
+.form {
+	display: grid;
+	gap: 0.6rem;
+	max-width: 420px;
+}
+
+.actions {
+	display: flex;
+	gap: 0.5rem;
+	margin-top: 0.25rem;
+}
+
+.error {
+	margin: 0.25rem 0 0;
+	color: #b91c1c;
+	font-size: 0.9rem;
+}

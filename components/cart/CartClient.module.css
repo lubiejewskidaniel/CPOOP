@@ -1,0 +1,67 @@
+.page {
+	max-width: 900px;
+	margin: 0 auto;
+}
+
+.hr {
+	margin: 1rem 0;
+	opacity: 0.4;
+}
+
+.list {
+	display: grid;
+	gap: 1rem;
+}
+
+.summary {
+	display: grid;
+	gap: 0.75rem;
+}
+
+.feedback {
+	margin-top: 0.75rem;
+	font-size: 0.85rem;
+	color: #2e7d32;
+}
+
+.checkoutBtn {
+	margin-top: 1rem;
+}
+
+.loginCta {
+	margin-top: 1rem;
+	padding: 0.75rem 1.25rem;
+	border: 1px dashed var(--color-primary);
+	border-radius: var(--radius-sm);
+	background: #e3f2fd;
+	color: var(--color-primary);
+	font-weight: 500;
+}
+
+.loginCta:hover {
+	background: var(--color-primary);
+	color: white;
+	border-style: solid;
+}
+
+.summary {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+	flex-wrap: wrap;
+}
+
+.clearBtn {
+	height: 40px;
+	padding: 0 1rem;
+}
+
+.clearBtn {
+	height: 40px;
+	padding: 0 1rem;
+	background: #fb0000;
+}
+
+.clearBtn:hover {
+	background: #450202;
+}

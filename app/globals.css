@@ -1,0 +1,159 @@
+/* globals.css
+   Basic global styles + small reset.
+   Most component styling is done in CSS Modules. */
+
+/* Colors + small design variables */
+:root {
+	--color-bg: #f6f7fb;
+	--color-surface: #ffffff;
+	--color-text: #1f2937;
+	--color-muted: #667085;
+
+	--color-primary: #0f766e; /* teal */
+	--color-primary-hover: #115e59;
+	--color-border: #e6e8ef;
+
+	--radius-sm: 8px;
+	--radius-md: 14px;
+
+	--shadow-sm: 0 8px 20px rgba(16, 24, 40, 0.08);
+}
+
+/* Reset od default styles */
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+/* Full height layout */
+html,
+body {
+	height: 100%;
+}
+
+/* Small browser fixes */
+html {
+	-webkit-text-size-adjust: 100%;
+	overflow-x: hidden;
+}
+
+body {
+	overflow-x: hidden;
+
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+		Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+
+	background-color: var(--color-bg);
+	color: var(--color-text);
+	line-height: 1.6;
+
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizeLegibility;
+}
+
+/* Headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: 600;
+	line-height: 1.25;
+}
+
+/* Default text color for paragraphs */
+p {
+	color: var(--color-muted);
+}
+
+/* Images media should not overflow */
+img,
+picture,
+video {
+	max-width: 100%;
+	display: block;
+}
+
+/* Links */
+a {
+	color: var(--color-primary);
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+/* Lists looked too flat after reset, so add a bit of indent */
+ul,
+ol {
+	padding-left: 1.25rem;
+}
+
+/* Basic form styles */
+button,
+input,
+textarea,
+select {
+	font-family: inherit;
+	font-size: 1rem;
+}
+
+/* Inputs so they match the app style */
+input,
+textarea,
+select {
+	border: 1px solid var(--color-border);
+	background: var(--color-surface);
+	color: var(--color-text);
+	padding: 0.6rem 0.75rem;
+	border-radius: var(--radius-sm);
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+	outline: none;
+	border-color: var(--color-primary);
+	box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+}
+
+/* Buttons -consistent size in UI */
+button {
+	cursor: pointer;
+	border: none;
+
+	/* important for consistent size */
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 40px; /* same height everywhere */
+	line-height: 1; /* prevents weird vertical spacing */
+	font-weight: 500;
+
+	background: var(--color-primary);
+	color: white;
+
+	padding: 0.6rem 1.2rem;
+	border-radius: var(--radius-sm);
+
+	transition: background-color 0.2s ease;
+}
+
+button:hover {
+	background-color: var(--color-primary-hover);
+}
+
+button:disabled {
+	opacity: 0.6;
+	cursor: not-allowed;
+}
+/* Keyboard focus - accessibility */
+:focus-visible {
+	outline: 3px solid var(--color-primary);
+	outline-offset: 2px;
+}
