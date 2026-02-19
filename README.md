@@ -54,7 +54,7 @@ Open http://localhost:3000
 
 ## Demo accounts (for marking/testing)
 
-All accounts use the same password: available on request
+All accounts use the same password: _available on request_
 
 - Regular user: **user@gmail.com**
 - Pharmacy Admin: **samir@pharmacist.co.uk**
